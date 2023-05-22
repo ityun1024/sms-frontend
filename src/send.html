@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>发送短信</title>
+    <style>
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        }
+
+        h2 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            font-size: 16px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        button[type="submit"] {
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3085d6;
+            color: #ffffff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #3ab5eb;
+        }
+    </style>
+</head>
+<body>
+<form action="http://localhost:8090/edumsm/msm/send/17809523930">
+    <h2>发送短信</h2>
+    <div class="form-group">
+        <label for="username">密钥ID:</label>
+        <input type="text" id="username" name="username" >
+    </div>
+    <div class="form-group">
+        <label for="password">密钥值:</label>
+        <input type="text" id="password" name="password" >
+    </div>
+    <div class="form-group">
+        <label for="password">电话号码:</label>
+        <input type="text" id="password" name="password" >
+    </div>
+    <div class="form-group">
+        <label for="password">短信签名:</label>
+        <input type="text" id="password" name="password" >
+    </div>
+    <div class="form-group">
+        <label for="password">短信模板:</label>
+        <input type="text" id="password" name="password" >
+    </div>
+    <button type="submit">发送</button>
+</form>
+</body>
+</html>
