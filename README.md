@@ -4,10 +4,6 @@
 
 vue2 + ts + spa
 
-## 对外访问
-
-https://sms.ydlclass.com
-
 ## Project setup
 
 ```
